@@ -22,14 +22,21 @@ import {
   Target,
   Shield,
   Code2,
+  Download,
+  Copy,
+  Check,
 } from "lucide-react";
 import type { TailorResult } from "@/lib/schemas/tailor";
+import { generateTailoredResumeLatex } from "@/lib/latex";
 
 export default function TailorPage() {
   const [jdText, setJdText] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
   const [result, setResult] = useState<TailorResult | null>(null);
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
+
+  const latexCode = result ? generateTailoredResumeLatex(result, jdText) : "";
 
   const handleGenerate = async () => {
     if (!jdText.trim()) return;
@@ -59,6 +66,28 @@ export default function TailorPage() {
     } finally {
       setIsGenerating(false);
     }
+  };
+
+  const handleDownloadLatex = () => {
+    if (!latexCode) return;
+
+    const blob = new Blob([latexCode], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "resume-copilot-tailored-resume.tex";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleCopyLatex = async () => {
+    if (!latexCode) return;
+
+    await navigator.clipboard.writeText(latexCode);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -223,6 +252,35 @@ export default function TailorPage() {
                         </ul>
                       </div>
                     ))}
+                  </div>
+
+                  <div className="rounded-xl border bg-muted/30 p-4">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <p className="text-sm font-semibold">导出 LaTeX 简历代码</p>
+                        <p className="text-xs text-muted-foreground">
+                          可直接下载 `.tex` 文件，或复制到 Overleaf / XeLaTeX 继续排版。
+                        </p>
+                      </div>
+                      <div className="flex gap-2">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={handleCopyLatex}
+                        >
+                          {copied ? (
+                            <Check className="mr-1.5 h-4 w-4" />
+                          ) : (
+                            <Copy className="mr-1.5 h-4 w-4" />
+                          )}
+                          {copied ? "已复制" : "复制代码"}
+                        </Button>
+                        <Button size="sm" onClick={handleDownloadLatex}>
+                          <Download className="mr-1.5 h-4 w-4" />
+                          下载 .tex
+                        </Button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
