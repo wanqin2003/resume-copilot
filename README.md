@@ -19,8 +19,6 @@
 
 ## 产品演示
 
-GitHub README 对内嵌视频支持不稳定，所以这里改成更稳定的观看方式：
-
 - [点击观看演示视频（MP4）](https://github.com/wanqin2003/resume-copilot/raw/main/public/demo-video.mp4)
 - [点击打开 AI 定制工作台截图](https://raw.githubusercontent.com/wanqin2003/resume-copilot/main/public/demo-tailor.png)
 
