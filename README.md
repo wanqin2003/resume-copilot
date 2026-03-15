@@ -1,5 +1,7 @@
 <div align="center">
   
+  <video src="./public/demo-video.mp4" width="100%" controls autoplay muted loop></video>
+  
   <h1>✨ Resume Copilot</h1>
   <p><strong>你的私人 AI 求职助理：粘贴 JD，一键生成满分简历与面试题</strong></p>
   <p>🔥 告别海投，让每一份简历都像经过专业猎头打磨 🔥</p>
@@ -37,7 +39,6 @@
 
 ### 1. 🎯 核心功能：AI 定制工作台
 左侧粘贴目标岗位的 JD，右侧自动生成定制的自我介绍、匹配的技能标签、重新包装的项目经历，以及预测的面试题。
-*(效果图：一键生成高度匹配的简历结构)*
 <div align="center">
   <img src="./public/demo-tailor.png" alt="AI 定制工作台展示" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
 </div>
