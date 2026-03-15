@@ -1,213 +1,130 @@
 <div align="center">
+  
   <h1>✨ Resume Copilot</h1>
-  <p><strong>AI-Powered Career Management & Smart Job Application Assistant</strong></p>
-  <p>基于大模型的个人职业生涯管理与智能投递助理<br/>本地存储 · 隐私优先 · BYOK（自带 API Key）</p>
+  <p><strong>你的私人 AI 求职助理：粘贴 JD，一键生成满分简历与面试题</strong></p>
+  <p>🔥 告别海投，让每一份简历都像经过专业猎头打磨 🔥</p>
 
   <p>
-    <a href="#quick-start">Quick Start</a> •
-    <a href="#features">Features</a> •
-    <a href="#tech-stack">Tech Stack</a> •
-    <a href="#contributing">Contributing</a>
+    <a href="#-为什么需要-resume-copilot">核心亮点</a> •
+    <a href="#-产品展示">产品展示</a> •
+    <a href="#-傻瓜式安装教程小白必看">安装教程</a> •
+    <a href="#-常见问题">常见问题</a>
   </p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js" alt="Next.js" />
-    <img src="https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-3-38bdf8?style=flat-square&logo=tailwindcss" alt="Tailwind" />
-    <img src="https://img.shields.io/badge/Prisma-SQLite-2d3748?style=flat-square&logo=prisma" alt="Prisma" />
-    <img src="https://img.shields.io/badge/Vercel_AI_SDK-6-000?style=flat-square" alt="AI SDK" />
-    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
-  </p>
 </div>
 
 ---
 
-## The Problem
+## 💡 为什么需要 Resume Copilot？
 
-每次投递简历，你是否都在做这些重复劳动？
+每次看到心仪的岗位，你是不是都在重复这些令人头疼的劳动？
+- 😫 在长篇大论的“全量简历”里，手动删减、挑选经历。
+- 😫 照着对方的 JD（职位描述），绞尽脑汁修改措辞和项目亮点。
+- 😫 面试前疯狂在网上搜面经，却不知道面试官针对**你的简历**会问什么。
+- 😫 用 Excel 艰难地记录“投了哪家”、“进展到哪步了”。
 
-- 🔁 从"全量简历"里手动挑选、删减经历
-- ✍️ 根据 JD 反复修改措辞和描述
-- 🤔 猜测面试官可能会问什么问题
-- 📊 用 Excel 或备忘录追踪投递状态
+**有了 Resume Copilot，这些工作只需 5 秒钟，点击一次按钮即可完成。**
 
-**Resume Copilot** 用 AI 帮你自动化这一切。
+### 🌟 我们的核心优势：
+1. **反幻觉红线**：AI 绝对**不会**无中生有捏造经历。它只会用高情商的话术（STAR法则）重新包装你的真实经历。
+2. **精准狙击**：无论你做过多少项目，它只为你挑选最能击中该岗位核心诉求的 3 个项目。
+3. **“薄弱点”面试预测**：除了高频常规题，它还会敏锐地找出你简历中不满足 JD 的“薄弱点”，并生成压力测试题，让你提前准备，有备无患。
+4. **绝对的数据隐私**：所有数据全部存储在**你的个人电脑上**，绝不上传任何云端服务器！
 
-## Features
+---
 
-### 📋 履历素材库 (Master Profile)
-维护一份**全量简历数据**——所有技能、经历、项目一个不落。AI 会根据目标岗位自动筛选最匹配的内容。
+## 📸 产品展示
 
-### 🎯 AI 定制工作台 (Tailor Studio)
-粘贴目标岗位的 JD，一键生成：
-- **定制化自我介绍**：高度贴合 JD 核心诉求
-- **匹配技能标签**：从你的技能库中精准挑选
-- **精选项目经历**：STAR 法则重写，最多 3 个最相关项目
-- **面试预测**：高频题（你的强项）+ 压力测试题（可能的短板）+ 策略建议
+### 1. 🎯 核心功能：AI 定制工作台
+左侧粘贴目标岗位的 JD，右侧自动生成定制的自我介绍、匹配的技能标签、重新包装的项目经历，以及预测的面试题。
+*(效果图：一键生成高度匹配的简历结构)*
+<div align="center">
+  <img src="./public/demo-tailor.png" alt="AI 定制工作台展示" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+</div>
+<br/>
 
-### 📊 投递看板 (Application Tracker)
-看板视图追踪每一次投递：`准备中` → `已投递` → `面试中` → `已结束`
+### 2. 📋 你的“弹药库”：履历素材库
+在这里尽情填写你从小到大的所有经历、掌握的所有技能。不用担心太长，AI 会在定制时帮你做减法。
+<div align="center">
+  <img src="./public/demo-profile.png" alt="履历素材库展示" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+</div>
+<br/>
 
-### 🔒 隐私优先
-- **数据全部存储在本地 SQLite**，不上传任何服务器
-- **BYOK 模式**：使用你自己的 API Key，支持 OpenAI / Anthropic / 兼容接口
+### 3. 📊 直观掌握进度：投递看板
+拖拽式管理你的每一次投递机会，从“准备中”到“已结束”，不再错过任何一个 Offer。
+<div align="center">
+  <img src="./public/demo-tracker.png" alt="投递看板展示" width="800" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+</div>
 
-## Tech Stack
+---
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | Next.js 14 (App Router) |
-| Language | TypeScript 5 |
-| Styling | Tailwind CSS 3 |
-| UI Components | shadcn/ui |
-| Database | Prisma ORM + SQLite |
-| AI Engine | Vercel AI SDK + Zod structured output |
-| AI Models | OpenAI GPT-4o / Anthropic Claude 3.5 (switchable) |
+## 🚀 傻瓜式安装教程（小白必看）
 
-## Quick Start
+虽然这是一个开源的程序，但你**不需要懂任何编程知识**也能在自己的电脑上运行它。请跟着下面的步骤一步步来，只需要 3 分钟！
 
-### Prerequisites
+### 前置准备：你需要两个东西
+1. **一个 AI 密钥 (API Key)**：这是让软件拥有“大脑”的钥匙。你可以去 [OpenAI官网](https://platform.openai.com/) 或 [Anthropic官网](https://console.anthropic.com/) 注册并获取一个（长得像 `sk-xxxx...` 的一串字母）。
+2. **下载 Node.js**：这是一个运行环境。去 [Node.js 官网](https://nodejs.org/zh-cn) 下载并安装“长期维护版 (LTS)”。一路点击“下一步”安装即可。
 
-- **Node.js** 18+
-- **npm** 9+
-- An **OpenAI** or **Anthropic** API Key
+### 开始安装：
 
-### 1. Clone & Install
+**第 1 步：下载项目**
+点击这个页面右上角的绿色按钮 `<> Code`，选择 **Download ZIP**，下载后解压到你的电脑里。
 
-```bash
-git clone https://github.com/YOUR_USERNAME/resume-copilot.git
-cd resume-copilot
-npm install
-```
-
-### 2. Configure Environment
-
-```bash
-cp .env.example .env.local
-```
-
-Edit `.env.local` with your API key:
-
-```env
+**第 2 步：配置你的 AI 密钥**
+打开刚才解压的文件夹，找到里面一个名叫 `.env.example` 的文件。
+1. 把这个文件的名字重命名为 `.env.local`。
+2. 用记事本（或任何文本编辑器）打开它。
+3. 把你准备好的 API Key 填进去，保存并关闭。就像这样：
+```text
 AI_PROVIDER=openai
-OPENAI_API_KEY=sk-your-key-here
+OPENAI_API_KEY=sk-在这里粘贴你的真实密钥
 OPENAI_MODEL=gpt-4o
 ```
 
-<details>
-<summary>💡 Using Anthropic instead?</summary>
+**第 3 步：启动软件**
+如果你用的是 Windows 系统：
+1. 打开解压的文件夹。
+2. 在文件夹顶部的地址栏（显示路径的地方）输入 `cmd`，然后按回车。会弹出一个黑色的命令窗口。
 
-```env
-AI_PROVIDER=anthropic
-ANTHROPIC_API_KEY=sk-ant-your-key-here
-ANTHROPIC_MODEL=claude-3-5-sonnet-20240620
-```
-</details>
+如果你用的是 Mac 系统：
+1. 找到“终端 (Terminal)”应用并打开。
+2. 输入 `cd `（注意有个空格），然后把解压的文件夹拖进终端窗口，按回车。
 
-<details>
-<summary>💡 Using a local model (Ollama)?</summary>
-
-```env
-AI_PROVIDER=openai
-OPENAI_API_KEY=ollama
-OPENAI_BASE_URL=http://localhost:11434/v1
-OPENAI_MODEL=llama3
-```
-</details>
-
-### 3. Initialize Database
+**最后，在刚才打开的窗口里，依次输入并回车运行这三行魔法指令**（每一行运行完可能需要等一小会儿）：
 
 ```bash
+# 第一步：安装必要的组件
+npm install
+
+# 第二步：初始化你本地的安全数据库
 npx prisma db push
-```
 
-### 4. Run
-
-```bash
+# 第三步：启动软件！
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and start building your career profile!
+看到绿色的 `Ready` 字样后，打开你的浏览器，输入网址：**http://localhost:3000**
 
-## Project Structure
+🎉 **恭喜你！你的私人 AI 求职助理已经上线！** 🎉
 
-```
-resume-copilot/
-├── prisma/
-│   └── schema.prisma          # Data models (MasterProfile, Application)
-├── src/
-│   ├── app/
-│   │   ├── api/ai/tailor/     # AI tailoring API route
-│   │   ├── profile/           # Master Profile page
-│   │   ├── applications/      # Application Tracker page
-│   │   ├── tailor/            # AI Tailor Studio page
-│   │   └── layout.tsx         # Root layout with sidebar
-│   ├── components/
-│   │   ├── sidebar.tsx        # Navigation sidebar
-│   │   └── ui/                # shadcn/ui components
-│   └── lib/
-│       ├── db.ts              # Prisma client singleton
-│       ├── utils.ts           # Utility functions
-│       └── schemas/
-│           └── tailor.ts      # Zod schemas for AI output
-├── .env.example               # Environment template
-└── package.json
-```
+---
 
-## How It Works
+## 🙋 常见问题
 
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  Master Profile  │────▶│  AI Tailor API    │────▶│  Tailored Resume │
-│  (Your full CV)  │     │  + Target JD      │     │  + Interview Prep │
-└─────────────────┘     └──────────────────┘     └─────────────────┘
-        │                        │
-        │                  ┌─────┴──────┐
-        │                  │  Zod Schema │  ← Structured output
-        │                  │  + System   │    (no hallucination)
-        │                  │    Prompt   │
-        │                  └────────────┘
-        │
-        ▼
-┌─────────────────┐
-│  Application     │
-│  Tracker Board   │  ← Track all your applications
-└─────────────────┘
-```
+**Q: 使用这个软件需要付费吗？**
+软件本身完全免费且开源。你只需要向提供 AI 模型接口的服务商（如 OpenAI）支付极低的使用费（按你生成的字数扣费，修改一份简历通常不到一毛钱）。
 
-**Core AI Rules:**
-1. **Anti-hallucination** — Never fabricates skills or experiences
-2. **STAR format** — Rewrites bullets with Situation-Task-Action-Result
-3. **Smart selection** — Picks top 3 most relevant projects
-4. **Interview prep** — Predicts questions from strengths AND weaknesses
+**Q: 我的简历数据安全吗？会不会被用来训练 AI？**
+绝对安全。本软件没有自己的服务器，你的所有经历数据都保存在你电脑本地。在生成简历时，你的数据会直接通过官方加密通道发送给你配置的 API 提供商。
 
-## Roadmap
-
-- [ ] Profile data persistence (save/load from SQLite)
-- [ ] PDF resume export
-- [ ] Application CRUD operations
-- [ ] Drag-and-drop kanban board
-- [ ] Multi-language resume generation
-- [ ] Chrome extension for one-click JD import
-- [ ] Resume version history & diff
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Q: 既然生成这么方便，我可以把生成的简历直接下载成 PDF 吗？**
+由于目前是 1.0 版本，PDF 导出功能还在紧张开发中！目前的最佳用法是：把生成的极佳文案，复制到你常用的简历排版工具（如超级简历、木即简历）中。
 
 ---
 
 <div align="center">
-  <p>If this project helps you land your dream job, consider giving it a ⭐!</p>
-  <p>Built with ❤️ and AI</p>
+  <p>如果 Resume Copilot 帮你拿到了心仪的 Offer，请务必回到这里给项目点一个 <b>⭐ Star</b>！</p>
+  <p>你的支持是我们持续优化的最大动力。</p>
+  <p>Built with ❤️ for Job Seekers</p>
 </div>
