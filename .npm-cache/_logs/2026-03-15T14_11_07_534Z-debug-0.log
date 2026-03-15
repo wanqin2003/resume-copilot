@@ -1,0 +1,888 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.20.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/wanqin/resume-copilot/.npmrc
+5 silly config load:file:/Users/wanqin/.npmrc
+6 silly config load:file:/Users/wanqin/.npm-global/etc/npmrc
+7 verbose title npm install zod @ai-sdk/openai @ai-sdk/anthropic
+8 verbose argv "install" "zod" "@ai-sdk/openai" "@ai-sdk/anthropic" "--cache" "/Users/wanqin/resume-copilot/.npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/wanqin/resume-copilot/.npm-cache/_logs/2026-03-15T14_11_07_534Z-
+10 verbose logfile /Users/wanqin/resume-copilot/.npm-cache/_logs/2026-03-15T14_11_07_534Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest zod@*
+15 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/zod 7484ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/zod set size:undefined disposed:false
+18 silly fetch manifest @ai-sdk/openai@*
+19 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fopenai cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fopenai 1643ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fopenai set size:undefined disposed:false
+22 silly fetch manifest @ai-sdk/anthropic@*
+23 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fanthropic cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fanthropic 1260ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fanthropic set size:undefined disposed:false
+26 silly placeDep ROOT @ai-sdk/anthropic@3.0.58 OK for: resume-copilot@0.1.0 want: *
+27 silly placeDep ROOT @ai-sdk/openai@3.0.41 OK for: resume-copilot@0.1.0 want: *
+28 silly placeDep ROOT zod@4.3.6 REPLACE for: resume-copilot@0.1.0 want: *
+29 warn ERESOLVE overriding peer dependency {
+29 warn ERESOLVE   code: 'ERESOLVE',
+29 warn ERESOLVE   edge: {
+29 warn ERESOLVE     type: 'peer',
+29 warn ERESOLVE     name: 'zod',
+29 warn ERESOLVE     spec: '^3.23.8',
+29 warn ERESOLVE     from: {
+29 warn ERESOLVE       name: 'ai',
+29 warn ERESOLVE       version: '4.3.19',
+29 warn ERESOLVE       location: 'node_modules/ai',
+29 warn ERESOLVE       isWorkspace: false,
+29 warn ERESOLVE       dependents: [Array]
+29 warn ERESOLVE     }
+29 warn ERESOLVE   },
+29 warn ERESOLVE   dep: {
+29 warn ERESOLVE     name: 'zod',
+29 warn ERESOLVE     version: '4.3.6',
+29 warn ERESOLVE     whileInstalling: {
+29 warn ERESOLVE       name: 'resume-copilot',
+29 warn ERESOLVE       version: '0.1.0',
+29 warn ERESOLVE       path: '/Users/wanqin/resume-copilot'
+29 warn ERESOLVE     },
+29 warn ERESOLVE     location: 'node_modules/zod',
+29 warn ERESOLVE     isWorkspace: false,
+29 warn ERESOLVE     dependents: [ [Object] ]
+29 warn ERESOLVE   },
+29 warn ERESOLVE   force: false,
+29 warn ERESOLVE   isMine: true,
+29 warn ERESOLVE   strictPeerDeps: false,
+29 warn ERESOLVE   current: {
+29 warn ERESOLVE     name: 'zod',
+29 warn ERESOLVE     version: '3.25.76',
+29 warn ERESOLVE     location: 'node_modules/zod',
+29 warn ERESOLVE     isWorkspace: false,
+29 warn ERESOLVE     dependents: [
+29 warn ERESOLVE       [Object], [Object],
+29 warn ERESOLVE       [Object], [Object],
+29 warn ERESOLVE       [Object], [Object],
+29 warn ERESOLVE       [Object], [Object]
+29 warn ERESOLVE     ]
+29 warn ERESOLVE   }
+29 warn ERESOLVE }
+30 silly fetch manifest @ai-sdk/provider@3.0.8
+31 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider cache-miss
+32 silly fetch manifest @ai-sdk/provider-utils@4.0.19
+33 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils cache-miss
+34 silly fetch manifest @ai-sdk/provider@3.0.8
+35 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider cache-miss
+36 silly fetch manifest @ai-sdk/provider-utils@4.0.19
+37 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fprovider 866ms (cache miss)
+39 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider set size:undefined disposed:false
+40 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fprovider 1727ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider set size:undefined disposed:false
+42 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fprovider-utils 3284ms (cache miss)
+43 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils set size:undefined disposed:false
+44 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fprovider-utils 3446ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils set size:undefined disposed:false
+46 silly fetch manifest zod@^3.25.76 || ^4.1.8
+47 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+48 http cache https://registry.npmjs.org/zod 17ms (cache hit)
+49 silly packumentCache full:https://registry.npmjs.org/zod set size:3489329 disposed:false
+50 silly placeDep node_modules/@ai-sdk/anthropic @ai-sdk/provider@3.0.8 OK for: @ai-sdk/anthropic@3.0.58 want: 3.0.8
+51 silly placeDep ROOT @ai-sdk/provider-utils@4.0.19 OK for: @ai-sdk/anthropic@3.0.58 want: 4.0.19
+52 silly fetch manifest eventsource-parser@^3.0.6
+53 silly packumentCache full:https://registry.npmjs.org/eventsource-parser cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/eventsource-parser 488ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/eventsource-parser set size:undefined disposed:false
+56 silly placeDep node_modules/@ai-sdk/openai @ai-sdk/provider@3.0.8 OK for: @ai-sdk/openai@3.0.41 want: 3.0.8
+57 silly placeDep node_modules/@ai-sdk/provider-utils @ai-sdk/provider@3.0.8 OK for: @ai-sdk/provider-utils@4.0.19 want: 3.0.8
+58 silly placeDep ROOT eventsource-parser@3.0.6 OK for: @ai-sdk/provider-utils@4.0.19 want: ^3.0.6
+59 silly fetch manifest @ai-sdk/provider-utils@2.2.8
+60 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils cache-miss
+61 http cache https://registry.npmjs.org/@ai-sdk%2fprovider-utils 9ms (cache hit)
+62 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fprovider-utils set size:665553 disposed:false
+63 silly fetch manifest zod@^3.23.8
+64 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+65 http cache https://registry.npmjs.org/zod 10ms (cache hit)
+66 silly packumentCache full:https://registry.npmjs.org/zod set size:3489329 disposed:false
+67 silly fetch manifest @ai-sdk/react@1.2.12
+68 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2freact cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2freact 2222ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2freact set size:undefined disposed:false
+71 silly fetch manifest react@^18 || ^19 || ^19.0.0-rc
+72 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/react 11262ms (cache miss)
+74 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+75 silly fetch manifest @ai-sdk/ui-utils@1.2.11
+76 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fui-utils cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/@ai-sdk%2fui-utils 893ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/@ai-sdk%2fui-utils set size:undefined disposed:false
+79 silly placeDep node_modules/ai @ai-sdk/provider-utils@2.2.8 OK for: ai@4.3.19 want: 2.2.8
+80 silly placeDep ROOT zod@3.25.76 REPLACE for: @ai-sdk/provider-utils@2.2.8 want: ^3.23.8
+81 silly placeDep ROOT @ai-sdk/react@1.2.12 OK for: ai@4.3.19 want: 1.2.12
+82 silly placeDep ROOT @ai-sdk/ui-utils@1.2.11 OK for: ai@4.3.19 want: 1.2.11
+83 silly fetch manifest secure-json-parse@^2.7.0
+84 silly packumentCache full:https://registry.npmjs.org/secure-json-parse cache-miss
+85 silly fetch manifest swr@^2.2.5
+86 silly packumentCache full:https://registry.npmjs.org/swr cache-miss
+87 silly fetch manifest throttleit@2.1.0
+88 silly packumentCache full:https://registry.npmjs.org/throttleit cache-miss
+89 silly fetch manifest zod-to-json-schema@^3.24.1
+90 silly packumentCache full:https://registry.npmjs.org/zod-to-json-schema cache-miss
+91 http fetch GET 200 https://registry.npmjs.org/throttleit 282ms (cache miss)
+92 silly packumentCache full:https://registry.npmjs.org/throttleit set size:undefined disposed:false
+93 http fetch GET 200 https://registry.npmjs.org/secure-json-parse 445ms (cache miss)
+94 silly packumentCache full:https://registry.npmjs.org/secure-json-parse set size:undefined disposed:false
+95 http fetch GET 200 https://registry.npmjs.org/zod-to-json-schema 1180ms (cache miss)
+96 silly packumentCache full:https://registry.npmjs.org/zod-to-json-schema set size:undefined disposed:false
+97 http fetch GET 200 https://registry.npmjs.org/swr 1813ms (cache miss)
+98 silly packumentCache full:https://registry.npmjs.org/swr set size:undefined disposed:false
+99 silly placeDep node_modules/@ai-sdk/react @ai-sdk/provider-utils@2.2.8 OK for: @ai-sdk/react@1.2.12 want: 2.2.8
+100 silly placeDep ROOT swr@2.4.1 OK for: @ai-sdk/react@1.2.12 want: ^2.2.5
+101 silly placeDep ROOT throttleit@2.1.0 OK for: @ai-sdk/react@1.2.12 want: 2.1.0
+102 silly fetch manifest dequal@^2.0.3
+103 silly packumentCache full:https://registry.npmjs.org/dequal cache-miss
+104 silly fetch manifest use-sync-external-store@^1.6.0
+105 silly packumentCache full:https://registry.npmjs.org/use-sync-external-store cache-miss
+106 http fetch GET 200 https://registry.npmjs.org/dequal 351ms (cache miss)
+107 silly packumentCache full:https://registry.npmjs.org/dequal set size:undefined disposed:false
+108 http fetch GET 200 https://registry.npmjs.org/use-sync-external-store 3005ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/use-sync-external-store set size:undefined disposed:false
+110 silly placeDep node_modules/@ai-sdk/ui-utils @ai-sdk/provider-utils@2.2.8 OK for: @ai-sdk/ui-utils@1.2.11 want: 2.2.8
+111 silly placeDep ROOT zod-to-json-schema@3.25.1 OK for: @ai-sdk/ui-utils@1.2.11 want: ^3.24.1
+112 silly fetch manifest react@^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+113 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+114 http cache https://registry.npmjs.org/react 19ms (cache hit)
+115 silly packumentCache full:https://registry.npmjs.org/react set size:6543561 disposed:false
+116 silly placeDep ROOT dequal@2.0.3 OK for: swr@2.4.1 want: ^2.0.3
+117 silly placeDep ROOT use-sync-external-store@1.6.0 OK for: swr@2.4.1 want: ^1.6.0
+118 silly placeDep ROOT secure-json-parse@2.7.0 OK for: @ai-sdk/provider-utils@2.2.8 want: ^2.7.0
+119 silly reify mark retired [ '/Users/wanqin/resume-copilot/node_modules/@ai-sdk/provider-utils' ]
+120 silly reify moves {
+120 silly reify   '/Users/wanqin/resume-copilot/node_modules/@ai-sdk/provider-utils': '/Users/wanqin/resume-copilot/node_modules/@ai-sdk/.provider-utils-eCumXfjT'
+120 silly reify }
+121 silly audit bulk request {
+121 silly audit   '@ai-sdk/provider': [ '1.1.3', '3.0.8' ],
+121 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+121 silly audit   '@emnapi/core': [ '1.9.0' ],
+121 silly audit   '@emnapi/runtime': [ '1.9.0' ],
+121 silly audit   '@emnapi/wasi-threads': [ '1.2.0' ],
+121 silly audit   '@eslint-community/eslint-utils': [ '4.9.1' ],
+121 silly audit   '@eslint-community/regexpp': [ '4.12.2' ],
+121 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+121 silly audit   '@eslint/js': [ '8.57.1' ],
+121 silly audit   '@humanwhocodes/config-array': [ '0.13.0' ],
+121 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+121 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+121 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+121 silly audit   'ansi-regex': [ '6.2.2', '5.0.1' ],
+121 silly audit   'strip-ansi': [ '7.2.0', '6.0.1' ],
+121 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+121 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+121 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+121 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+121 silly audit   '@napi-rs/wasm-runtime': [ '0.2.12' ],
+121 silly audit   '@next/env': [ '14.2.35' ],
+121 silly audit   '@next/eslint-plugin-next': [ '14.2.35' ],
+121 silly audit   '@next/swc-darwin-arm64': [ '14.2.33' ],
+121 silly audit   '@next/swc-darwin-x64': [ '14.2.33' ],
+121 silly audit   '@next/swc-linux-arm64-gnu': [ '14.2.33' ],
+121 silly audit   '@next/swc-linux-arm64-musl': [ '14.2.33' ],
+121 silly audit   '@next/swc-linux-x64-gnu': [ '14.2.33' ],
+121 silly audit   '@next/swc-linux-x64-musl': [ '14.2.33' ],
+121 silly audit   '@next/swc-win32-arm64-msvc': [ '14.2.33' ],
+121 silly audit   '@next/swc-win32-ia32-msvc': [ '14.2.33' ],
+121 silly audit   '@next/swc-win32-x64-msvc': [ '14.2.33' ],
+121 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+121 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+121 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+121 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+121 silly audit   '@opentelemetry/api': [ '1.9.0' ],
+121 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+121 silly audit   '@prisma/client': [ '6.19.2' ],
+121 silly audit   '@prisma/config': [ '6.19.2' ],
+121 silly audit   '@prisma/debug': [ '6.19.2' ],
+121 silly audit   '@prisma/engines': [ '6.19.2' ],
+121 silly audit   '@prisma/engines-version': [ '7.1.1-3.c2990dca591cba766e3b7ef5d9e8a84796e47ab7' ],
+121 silly audit   '@prisma/fetch-engine': [ '6.19.2' ],
+121 silly audit   '@prisma/get-platform': [ '6.19.2' ],
+121 silly audit   '@radix-ui/react-compose-refs': [ '1.1.2' ],
+121 silly audit   '@radix-ui/react-slot': [ '1.2.4' ],
+121 silly audit   '@rtsao/scc': [ '1.1.0' ],
+121 silly audit   '@rushstack/eslint-patch': [ '1.16.1' ],
+121 silly audit   '@standard-schema/spec': [ '1.1.0' ],
+121 silly audit   '@swc/counter': [ '0.1.3' ],
+121 silly audit   '@swc/helpers': [ '0.5.5' ],
+121 silly audit   '@tybys/wasm-util': [ '0.10.1' ],
+121 silly audit   '@types/diff-match-patch': [ '1.0.36' ],
+121 silly audit   '@types/json5': [ '0.0.29' ],
+121 silly audit   '@types/node': [ '20.19.37' ],
+121 silly audit   '@types/prop-types': [ '15.7.15' ],
+121 silly audit   '@types/react': [ '18.3.28' ],
+121 silly audit   '@types/react-dom': [ '18.3.7' ],
+121 silly audit   '@typescript-eslint/eslint-plugin': [ '8.57.0' ],
+121 silly audit   ignore: [ '7.0.5', '5.3.2' ],
+121 silly audit   '@typescript-eslint/parser': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/project-service': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/scope-manager': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/tsconfig-utils': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/type-utils': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/types': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/typescript-estree': [ '8.57.0' ],
+121 silly audit   'balanced-match': [ '4.0.4', '1.0.2' ],
+121 silly audit   'brace-expansion': [ '5.0.4', '1.1.12', '2.0.2' ],
+121 silly audit   minimatch: [ '10.2.4', '9.0.9', '3.1.5' ],
+121 silly audit   '@typescript-eslint/utils': [ '8.57.0' ],
+121 silly audit   '@typescript-eslint/visitor-keys': [ '8.57.0' ],
+121 silly audit   'eslint-visitor-keys': [ '5.0.1', '3.4.3' ],
+121 silly audit   '@ungap/structured-clone': [ '1.3.0' ],
+121 silly audit   '@unrs/resolver-binding-android-arm-eabi': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-android-arm64': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-darwin-arm64': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-darwin-x64': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-freebsd-x64': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-arm-gnueabihf': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-arm-musleabihf': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-arm64-gnu': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-arm64-musl': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-ppc64-gnu': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-riscv64-gnu': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-riscv64-musl': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-s390x-gnu': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-x64-gnu': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-linux-x64-musl': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-wasm32-wasi': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-win32-arm64-msvc': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-win32-ia32-msvc': [ '1.11.1' ],
+121 silly audit   '@unrs/resolver-binding-win32-x64-msvc': [ '1.11.1' ],
+121 silly audit   acorn: [ '8.16.0' ],
+121 silly audit   'acorn-jsx': [ '5.3.2' ],
+121 silly audit   ai: [ '4.3.19' ],
+121 silly audit   ajv: [ '6.14.0' ],
+121 silly audit   'ansi-styles': [ '4.3.0', '6.2.3' ],
+121 silly audit   'any-promise': [ '1.3.0' ],
+121 silly audit   anymatch: [ '3.1.3' ],
+121 silly audit   arg: [ '5.0.2' ],
+121 silly audit   argparse: [ '2.0.1' ],
+121 silly audit   'aria-query': [ '5.3.2' ],
+121 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+121 silly audit   'array-includes': [ '3.1.9' ],
+121 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+121 silly audit   'array.prototype.findlastindex': [ '1.2.6' ],
+121 silly audit   'array.prototype.flat': [ '1.3.3' ],
+121 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+121 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+121 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+121 silly audit   'ast-types-flow': [ '0.0.8' ],
+121 silly audit   'async-function': [ '1.0.0' ],
+121 silly audit   autoprefixer: [ '10.4.27' ],
+121 silly audit   'available-typed-arrays': [ '1.0.7' ],
+121 silly audit   'axe-core': [ '4.11.1' ],
+121 silly audit   'axobject-query': [ '4.1.0' ],
+121 silly audit   'baseline-browser-mapping': [ '2.10.8' ],
+121 silly audit   'binary-extensions': [ '2.3.0' ],
+121 silly audit   braces: [ '3.0.3' ],
+121 silly audit   browserslist: [ '4.28.1' ],
+121 silly audit   busboy: [ '1.6.0' ],
+121 silly audit   c12: [ '3.1.0' ],
+121 silly audit   'call-bind': [ '1.0.8' ],
+121 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+121 silly audit   'call-bound': [ '1.0.4' ],
+121 silly audit   callsites: [ '3.1.0' ],
+121 silly audit   'camelcase-css': [ '2.0.1' ],
+121 silly audit   'caniuse-lite': [ '1.0.30001779' ],
+121 silly audit   chalk: [ '4.1.2', '5.6.2' ],
+121 silly audit   chokidar: [ '4.0.3', '3.6.0' ],
+121 silly audit   citty: [ '0.1.6', '0.2.1' ],
+121 silly audit   'class-variance-authority': [ '0.7.1' ],
+121 silly audit   'client-only': [ '0.0.1' ],
+121 silly audit   clsx: [ '2.1.1' ],
+121 silly audit   'color-convert': [ '2.0.1' ],
+121 silly audit   'color-name': [ '1.1.4' ],
+121 silly audit   commander: [ '4.1.1' ],
+121 silly audit   'concat-map': [ '0.0.1' ],
+121 silly audit   confbox: [ '0.2.4' ],
+121 silly audit   consola: [ '3.4.2' ],
+121 silly audit   'cross-spawn': [ '7.0.6' ],
+121 silly audit   cssesc: [ '3.0.0' ],
+121 silly audit   csstype: [ '3.2.3' ],
+121 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+121 silly audit   'data-view-buffer': [ '1.0.2' ],
+121 silly audit   'data-view-byte-length': [ '1.0.2' ],
+121 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+121 silly audit   debug: [ '4.4.3', '3.2.7' ],
+121 silly audit   'deep-is': [ '0.1.4' ],
+121 silly audit   'deepmerge-ts': [ '7.1.5' ],
+121 silly audit   'define-data-property': [ '1.1.4' ],
+121 silly audit   'define-properties': [ '1.2.1' ],
+121 silly audit   defu: [ '6.1.4' ],
+121 silly audit   destr: [ '2.0.5' ],
+121 silly audit   didyoumean: [ '1.2.2' ],
+121 silly audit   'diff-match-patch': [ '1.0.5' ],
+121 silly audit   dlv: [ '1.1.3' ],
+121 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+121 silly audit   dotenv: [ '16.6.1' ],
+121 silly audit   'dunder-proto': [ '1.0.1' ],
+121 silly audit   eastasianwidth: [ '0.2.0' ],
+121 silly audit   effect: [ '3.18.4' ],
+121 silly audit   'electron-to-chromium': [ '1.5.313' ],
+121 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+121 silly audit   empathic: [ '2.0.0' ],
+121 silly audit   'es-abstract': [ '1.24.1' ],
+121 silly audit   'es-define-property': [ '1.0.1' ],
+121 silly audit   'es-errors': [ '1.3.0' ],
+121 silly audit   'es-iterator-helpers': [ '1.3.1' ],
+121 silly audit   'es-object-atoms': [ '1.1.1' ],
+121 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+121 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+121 silly audit   'es-to-primitive': [ '1.3.0' ],
+121 silly audit   escalade: [ '3.2.0' ],
+121 silly audit   'escape-string-regexp': [ '4.0.0' ],
+121 silly audit   eslint: [ '8.57.1' ],
+121 silly audit   'eslint-config-next': [ '14.2.35' ],
+121 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+121 silly audit   'eslint-import-resolver-typescript': [ '3.10.1' ],
+121 silly audit   'eslint-module-utils': [ '2.12.1' ],
+121 silly audit   'eslint-plugin-import': [ '2.32.0' ],
+121 silly audit   semver: [ '6.3.1', '7.7.4' ],
+121 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+121 silly audit   'eslint-plugin-react': [ '7.37.5' ],
+121 silly audit   'eslint-plugin-react-hooks': [ '5.0.0-canary-7118f5dd7-20230705' ],
+121 silly audit   resolve: [ '2.0.0-next.6', '1.22.11' ],
+121 silly audit   'eslint-scope': [ '7.2.2' ],
+121 silly audit   espree: [ '9.6.1' ],
+121 silly audit   esquery: [ '1.7.0' ],
+121 silly audit   esrecurse: [ '4.3.0' ],
+121 silly audit   estraverse: [ '5.3.0' ],
+121 silly audit   esutils: [ '2.0.3' ],
+121 silly audit   exsolve: [ '1.0.8' ],
+121 silly audit   'fast-check': [ '3.23.2' ],
+121 silly audit   'fast-deep-equal': [ '3.1.3' ],
+121 silly audit   'fast-glob': [ '3.3.3' ],
+121 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+121 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+121 silly audit   'fast-levenshtein': [ '2.0.6' ],
+121 silly audit   fastq: [ '1.20.1' ],
+121 silly audit   'file-entry-cache': [ '6.0.1' ],
+121 silly audit   'fill-range': [ '7.1.1' ],
+121 silly audit   'find-up': [ '5.0.0' ],
+121 silly audit   'flat-cache': [ '3.2.0' ],
+121 silly audit   flatted: [ '3.4.1' ],
+121 silly audit   'for-each': [ '0.3.5' ],
+121 silly audit   'foreground-child': [ '3.3.1' ],
+121 silly audit   'fraction.js': [ '5.3.4' ],
+121 silly audit   'fs.realpath': [ '1.0.0' ],
+121 silly audit   fsevents: [ '2.3.3' ],
+121 silly audit   'function-bind': [ '1.1.2' ],
+121 silly audit   'function.prototype.name': [ '1.1.8' ],
+121 silly audit   'functions-have-names': [ '1.2.3' ],
+121 silly audit   'generator-function': [ '2.0.1' ],
+121 silly audit   'get-intrinsic': [ '1.3.0' ],
+121 silly audit   'get-proto': [ '1.0.1' ],
+121 silly audit   'get-symbol-description': [ '1.1.0' ],
+121 silly audit   'get-tsconfig': [ '4.13.6' ],
+121 silly audit   giget: [ '2.0.0' ],
+121 silly audit   glob: [ '10.3.10', '7.2.3' ],
+121 silly audit   globals: [ '13.24.0' ],
+121 silly audit   globalthis: [ '1.0.4' ],
+121 silly audit   gopd: [ '1.2.0' ],
+121 silly audit   'graceful-fs': [ '4.2.11' ],
+121 silly audit   graphemer: [ '1.4.0' ],
+121 silly audit   'has-bigints': [ '1.1.0' ],
+121 silly audit   'has-flag': [ '4.0.0' ],
+121 silly audit   'has-property-descriptors': [ '1.0.2' ],
+121 silly audit   'has-proto': [ '1.2.0' ],
+121 silly audit   'has-symbols': [ '1.1.0' ],
+121 silly audit   'has-tostringtag': [ '1.0.2' ],
+121 silly audit   hasown: [ '2.0.2' ],
+121 silly audit   'import-fresh': [ '3.3.1' ],
+121 silly audit   imurmurhash: [ '0.1.4' ],
+121 silly audit   inflight: [ '1.0.6' ],
+121 silly audit   inherits: [ '2.0.4' ],
+121 silly audit   'internal-slot': [ '1.1.0' ],
+121 silly audit   'is-array-buffer': [ '3.0.5' ],
+121 silly audit   'is-async-function': [ '2.1.1' ],
+121 silly audit   'is-bigint': [ '1.1.0' ],
+121 silly audit   'is-binary-path': [ '2.1.0' ],
+121 silly audit   'is-boolean-object': [ '1.2.2' ],
+121 silly audit   'is-bun-module': [ '2.0.0' ],
+121 silly audit   'is-callable': [ '1.2.7' ],
+121 silly audit   'is-core-module': [ '2.16.1' ],
+121 silly audit   'is-data-view': [ '1.0.2' ],
+121 silly audit   'is-date-object': [ '1.1.0' ],
+121 silly audit   'is-extglob': [ '2.1.1' ],
+121 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+121 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+121 silly audit   'is-generator-function': [ '1.1.2' ],
+121 silly audit   'is-glob': [ '4.0.3' ],
+121 silly audit   'is-map': [ '2.0.3' ],
+121 silly audit   'is-negative-zero': [ '2.0.3' ],
+121 silly audit   'is-number': [ '7.0.0' ],
+121 silly audit   'is-number-object': [ '1.1.1' ],
+121 silly audit   'is-path-inside': [ '3.0.3' ],
+121 silly audit   'is-regex': [ '1.2.1' ],
+121 silly audit   'is-set': [ '2.0.3' ],
+121 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+121 silly audit   'is-string': [ '1.1.1' ],
+121 silly audit   'is-symbol': [ '1.1.1' ],
+121 silly audit   'is-typed-array': [ '1.1.15' ],
+121 silly audit   'is-weakmap': [ '2.0.2' ],
+121 silly audit   'is-weakref': [ '1.1.1' ],
+121 silly audit   'is-weakset': [ '2.0.4' ],
+121 silly audit   isarray: [ '2.0.5' ],
+121 silly audit   isexe: [ '2.0.0' ],
+121 silly audit   'iterator.prototype': [ '1.1.5' ],
+121 silly audit   jackspeak: [ '2.3.6' ],
+121 silly audit   jiti: [ '2.6.1', '1.21.7' ],
+121 silly audit   'js-tokens': [ '4.0.0' ],
+121 silly audit   'js-yaml': [ '4.1.1' ],
+121 silly audit   'json-buffer': [ '3.0.1' ],
+121 silly audit   'json-schema': [ '0.4.0' ],
+121 silly audit   'json-schema-traverse': [ '0.4.1' ],
+121 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+121 silly audit   json5: [ '1.0.2' ],
+121 silly audit   jsondiffpatch: [ '0.6.0' ],
+121 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+121 silly audit   keyv: [ '4.5.4' ],
+121 silly audit   'language-subtag-registry': [ '0.3.23' ],
+121 silly audit   'language-tags': [ '1.0.9' ],
+121 silly audit   levn: [ '0.4.1' ],
+121 silly audit   lilconfig: [ '3.1.3' ],
+121 silly audit   'lines-and-columns': [ '1.2.4' ],
+121 silly audit   'locate-path': [ '6.0.0' ],
+121 silly audit   'lodash.merge': [ '4.6.2' ],
+121 silly audit   'loose-envify': [ '1.4.0' ],
+121 silly audit   'lru-cache': [ '10.4.3' ],
+121 silly audit   'lucide-react': [ '0.460.0' ],
+121 silly audit   'math-intrinsics': [ '1.1.0' ],
+121 silly audit   merge2: [ '1.4.1' ],
+121 silly audit   micromatch: [ '4.0.8' ],
+121 silly audit   minimist: [ '1.2.8' ],
+121 silly audit   minipass: [ '7.1.3' ],
+121 silly audit   ms: [ '2.1.3' ],
+121 silly audit   mz: [ '2.7.0' ],
+121 silly audit   nanoid: [ '3.3.11' ],
+121 silly audit   'napi-postinstall': [ '0.3.4' ],
+121 silly audit   'natural-compare': [ '1.4.0' ],
+121 silly audit   next: [ '14.2.35' ],
+121 silly audit   postcss: [ '8.4.31', '8.5.8' ],
+121 silly audit   'node-exports-info': [ '1.6.0' ],
+121 silly audit   'node-fetch-native': [ '1.6.7' ],
+121 silly audit   'node-releases': [ '2.0.36' ],
+121 silly audit   'normalize-path': [ '3.0.0' ],
+121 silly audit   nypm: [ '0.6.5' ],
+121 silly audit   'object-assign': [ '4.1.1' ],
+121 silly audit   'object-hash': [ '3.0.0' ],
+121 silly audit   'object-inspect': [ '1.13.4' ],
+121 silly audit   'object-keys': [ '1.1.1' ],
+121 silly audit   'object.assign': [ '4.1.7' ],
+121 silly audit   'object.entries': [ '1.1.9' ],
+121 silly audit   'object.fromentries': [ '2.0.8' ],
+121 silly audit   'object.groupby': [ '1.0.3' ],
+121 silly audit   'object.values': [ '1.2.1' ],
+121 silly audit   ohash: [ '2.0.11' ],
+121 silly audit   once: [ '1.4.0' ],
+121 silly audit   optionator: [ '0.9.4' ],
+121 silly audit   'own-keys': [ '1.0.1' ],
+121 silly audit   'p-limit': [ '3.1.0' ],
+121 silly audit   'p-locate': [ '5.0.0' ],
+121 silly audit   'parent-module': [ '1.0.1' ],
+121 silly audit   'path-exists': [ '4.0.0' ],
+121 silly audit   'path-is-absolute': [ '1.0.1' ],
+121 silly audit   'path-key': [ '3.1.1' ],
+121 silly audit   'path-parse': [ '1.0.7' ],
+121 silly audit   'path-scurry': [ '1.11.1' ],
+121 silly audit   pathe: [ '2.0.3' ],
+121 silly audit   'perfect-debounce': [ '1.0.0' ],
+121 silly audit   picocolors: [ '1.1.1' ],
+121 silly audit   picomatch: [ '2.3.1', '4.0.3' ],
+121 silly audit   pify: [ '2.3.0' ],
+121 silly audit   pirates: [ '4.0.7' ],
+121 silly audit   'pkg-types': [ '2.3.0' ],
+121 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+121 silly audit   'postcss-import': [ '15.1.0' ],
+121 silly audit   'postcss-js': [ '4.1.0' ],
+121 silly audit   'postcss-load-config': [ '6.0.1' ],
+121 silly audit   'postcss-nested': [ '6.2.0' ],
+121 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+121 silly audit   'postcss-value-parser': [ '4.2.0' ],
+121 silly audit   'prelude-ls': [ '1.2.1' ],
+121 silly audit   prisma: [ '6.19.2' ],
+121 silly audit   'prop-types': [ '15.8.1' ],
+121 silly audit   punycode: [ '2.3.1' ],
+121 silly audit   'pure-rand': [ '6.1.0' ],
+121 silly audit   'queue-microtask': [ '1.2.3' ],
+121 silly audit   rc9: [ '2.1.2' ],
+121 silly audit   react: [ '18.3.1' ],
+121 silly audit   'react-dom': [ '18.3.1' ],
+121 silly audit   'react-is': [ '16.13.1' ],
+121 silly audit   'read-cache': [ '1.0.0' ],
+121 silly audit   readdirp: [ '4.1.2', '3.6.0' ],
+121 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+121 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+121 silly audit   'resolve-from': [ '4.0.0' ],
+121 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+121 silly audit   reusify: [ '1.1.0' ],
+121 silly audit   rimraf: [ '3.0.2' ],
+121 silly audit   'run-parallel': [ '1.2.0' ],
+121 silly audit   'safe-array-concat': [ '1.1.3' ],
+121 silly audit   'safe-push-apply': [ '1.0.0' ],
+121 silly audit   'safe-regex-test': [ '1.1.0' ],
+121 silly audit   scheduler: [ '0.23.2' ],
+121 silly audit   'set-function-length': [ '1.2.2' ],
+121 silly audit   'set-function-name': [ '2.0.2' ],
+121 silly audit   'set-proto': [ '1.0.0' ],
+121 silly audit   'shebang-command': [ '2.0.0' ],
+121 silly audit   'shebang-regex': [ '3.0.0' ],
+121 silly audit   'side-channel': [ '1.1.0' ],
+121 silly audit   'side-channel-list': [ '1.0.0' ],
+121 silly audit   'side-channel-map': [ '1.0.1' ],
+121 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+121 silly audit   'signal-exit': [ '4.1.0' ],
+121 silly audit   'source-map-js': [ '1.2.1' ],
+121 silly audit   'stable-hash': [ '0.0.5' ],
+121 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+121 silly audit   streamsearch: [ '1.1.0' ],
+121 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+121 silly audit   'string.prototype.includes': [ '2.0.1' ],
+121 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+121 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+121 silly audit   'string.prototype.trim': [ '1.2.10' ],
+121 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+121 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+121 silly audit   'strip-bom': [ '3.0.0' ],
+121 silly audit   'strip-json-comments': [ '3.1.1' ],
+121 silly audit   'styled-jsx': [ '5.1.1' ],
+121 silly audit   sucrase: [ '3.35.1' ],
+121 silly audit   'supports-color': [ '7.2.0' ],
+121 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+121 silly audit   'tailwind-merge': [ '2.6.1' ],
+121 silly audit   tailwindcss: [ '3.4.19' ],
+121 silly audit   'text-table': [ '0.2.0' ],
+121 silly audit   thenify: [ '3.3.1' ],
+121 silly audit   'thenify-all': [ '1.6.0' ],
+121 silly audit   tinyexec: [ '1.0.4' ],
+121 silly audit   tinyglobby: [ '0.2.15' ],
+121 silly audit   fdir: [ '6.5.0' ],
+121 silly audit   'to-regex-range': [ '5.0.1' ],
+121 silly audit   'ts-api-utils': [ '2.4.0' ],
+121 silly audit   'ts-interface-checker': [ '0.1.13' ],
+121 silly audit   'tsconfig-paths': [ '3.15.0' ],
+121 silly audit   tslib: [ '2.8.1' ],
+121 silly audit   'type-check': [ '0.4.0' ],
+121 silly audit   'type-fest': [ '0.20.2' ],
+121 silly audit   'typed-array-buffer': [ '1.0.3' ],
+121 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+121 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+121 silly audit   'typed-array-length': [ '1.0.7' ],
+121 silly audit   typescript: [ '5.9.3' ],
+121 silly audit   'unbox-primitive': [ '1.1.0' ],
+121 silly audit   'undici-types': [ '6.21.0' ],
+121 silly audit   'unrs-resolver': [ '1.11.1' ],
+121 silly audit   'update-browserslist-db': [ '1.2.3' ],
+121 silly audit   'uri-js': [ '4.4.1' ],
+121 silly audit   'util-deprecate': [ '1.0.2' ],
+121 silly audit   which: [ '2.0.2' ],
+121 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+121 silly audit   'which-builtin-type': [ '1.2.1' ],
+121 silly audit   'which-collection': [ '1.0.2' ],
+121 silly audit   'which-typed-array': [ '1.1.20' ],
+121 silly audit   'word-wrap': [ '1.2.5' ],
+121 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+121 silly audit   wrappy: [ '1.0.2' ],
+121 silly audit   'yocto-queue': [ '0.1.0' ],
+121 silly audit   '@ai-sdk/anthropic': [ '3.0.58' ],
+121 silly audit   '@ai-sdk/openai': [ '3.0.41' ],
+121 silly audit   '@ai-sdk/provider-utils': [ '4.0.19', '2.2.8' ],
+121 silly audit   'eventsource-parser': [ '3.0.6' ],
+121 silly audit   zod: [ '3.25.76' ],
+121 silly audit   '@ai-sdk/react': [ '1.2.12' ],
+121 silly audit   '@ai-sdk/ui-utils': [ '1.2.11' ],
+121 silly audit   swr: [ '2.4.1' ],
+121 silly audit   throttleit: [ '2.1.0' ],
+121 silly audit   'zod-to-json-schema': [ '3.25.1' ],
+121 silly audit   dequal: [ '2.0.3' ],
+121 silly audit   'use-sync-external-store': [ '1.6.0' ],
+121 silly audit   'secure-json-parse': [ '2.7.0' ]
+121 silly audit }
+122 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-x64-msvc
+123 silly reify mark deleted [
+123 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-x64-msvc'
+123 silly reify ]
+124 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-ia32-msvc
+125 silly reify mark deleted [
+125 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-ia32-msvc'
+125 silly reify ]
+126 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-arm64-msvc
+127 silly reify mark deleted [
+127 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-win32-arm64-msvc'
+127 silly reify ]
+128 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-wasm32-wasi
+129 silly reify mark deleted [
+129 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-wasm32-wasi'
+129 silly reify ]
+130 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@napi-rs/wasm-runtime
+131 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@napi-rs/wasm-runtime' ]
+132 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@emnapi/core
+133 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@emnapi/core' ]
+134 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@emnapi/runtime
+135 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@emnapi/runtime' ]
+136 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@tybys/wasm-util
+137 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@tybys/wasm-util' ]
+138 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@emnapi/wasi-threads
+139 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@emnapi/wasi-threads' ]
+140 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-x64-musl
+141 silly reify mark deleted [
+141 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-x64-musl'
+141 silly reify ]
+142 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-x64-gnu
+143 silly reify mark deleted [
+143 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-x64-gnu'
+143 silly reify ]
+144 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-s390x-gnu
+145 silly reify mark deleted [
+145 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-s390x-gnu'
+145 silly reify ]
+146 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-riscv64-musl
+147 silly reify mark deleted [
+147 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-riscv64-musl'
+147 silly reify ]
+148 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-riscv64-gnu
+149 silly reify mark deleted [
+149 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-riscv64-gnu'
+149 silly reify ]
+150 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-ppc64-gnu
+151 silly reify mark deleted [
+151 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-ppc64-gnu'
+151 silly reify ]
+152 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm64-musl
+153 silly reify mark deleted [
+153 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm64-musl'
+153 silly reify ]
+154 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm64-gnu
+155 silly reify mark deleted [
+155 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm64-gnu'
+155 silly reify ]
+156 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm-musleabihf
+157 silly reify mark deleted [
+157 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm-musleabihf'
+157 silly reify ]
+158 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf
+159 silly reify mark deleted [
+159 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-linux-arm-gnueabihf'
+159 silly reify ]
+160 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-freebsd-x64
+161 silly reify mark deleted [
+161 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-freebsd-x64'
+161 silly reify ]
+162 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-darwin-x64
+163 silly reify mark deleted [
+163 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-darwin-x64'
+163 silly reify ]
+164 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-android-arm64
+165 silly reify mark deleted [
+165 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-android-arm64'
+165 silly reify ]
+166 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-android-arm-eabi
+167 silly reify mark deleted [
+167 silly reify   '/Users/wanqin/resume-copilot/node_modules/@unrs/resolver-binding-android-arm-eabi'
+167 silly reify ]
+168 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-win32-x64-msvc
+169 silly reify mark deleted [
+169 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-win32-x64-msvc'
+169 silly reify ]
+170 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-win32-ia32-msvc
+171 silly reify mark deleted [
+171 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-win32-ia32-msvc'
+171 silly reify ]
+172 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-win32-arm64-msvc
+173 silly reify mark deleted [
+173 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-win32-arm64-msvc'
+173 silly reify ]
+174 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-linux-x64-musl
+175 silly reify mark deleted [
+175 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-linux-x64-musl'
+175 silly reify ]
+176 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-linux-x64-gnu
+177 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@next/swc-linux-x64-gnu' ]
+178 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-linux-arm64-musl
+179 silly reify mark deleted [
+179 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-linux-arm64-musl'
+179 silly reify ]
+180 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-linux-arm64-gnu
+181 silly reify mark deleted [
+181 silly reify   '/Users/wanqin/resume-copilot/node_modules/@next/swc-linux-arm64-gnu'
+181 silly reify ]
+182 verbose reify failed optional dependency /Users/wanqin/resume-copilot/node_modules/@next/swc-darwin-x64
+183 silly reify mark deleted [ '/Users/wanqin/resume-copilot/node_modules/@next/swc-darwin-x64' ]
+184 http cache @ai-sdk/openai@https://registry.npmjs.org/@ai-sdk/openai/-/openai-3.0.41.tgz 0ms (cache hit)
+185 http cache @ai-sdk/anthropic@https://registry.npmjs.org/@ai-sdk/anthropic/-/anthropic-3.0.58.tgz 0ms (cache hit)
+186 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+187 http cache @tybys/wasm-util@https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.1.tgz 0ms (cache hit)
+188 http cache eventsource-parser@https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.0.6.tgz 0ms (cache hit)
+189 http cache @napi-rs/wasm-runtime@https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz 0ms (cache hit)
+190 http cache @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.9.0.tgz 0ms (cache hit)
+191 http cache @emnapi/core@https://registry.npmjs.org/@emnapi/core/-/core-1.9.0.tgz 0ms (cache hit)
+192 http cache @emnapi/wasi-threads@https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.0.tgz 0ms (cache hit)
+193 http cache @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-4.0.19.tgz 0ms (cache hit)
+194 http cache @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 0ms (cache hit)
+195 http cache @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 0ms (cache hit)
+196 http cache @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 0ms (cache hit)
+197 http cache @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 0ms (cache hit)
+198 http cache @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 0ms (cache hit)
+199 http cache @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 0ms (cache hit)
+200 silly tarball no local data for @ai-sdk/openai@https://registry.npmjs.org/@ai-sdk/openai/-/openai-3.0.41.tgz. Extracting by manifest.
+201 silly tarball no local data for @ai-sdk/anthropic@https://registry.npmjs.org/@ai-sdk/anthropic/-/anthropic-3.0.58.tgz. Extracting by manifest.
+202 silly tarball no local data for fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz. Extracting by manifest.
+203 silly tarball no local data for @tybys/wasm-util@https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.1.tgz. Extracting by manifest.
+204 silly tarball no local data for eventsource-parser@https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.0.6.tgz. Extracting by manifest.
+205 silly tarball no local data for @napi-rs/wasm-runtime@https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz. Extracting by manifest.
+206 silly tarball no local data for @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.9.0.tgz. Extracting by manifest.
+207 silly tarball no local data for @emnapi/core@https://registry.npmjs.org/@emnapi/core/-/core-1.9.0.tgz. Extracting by manifest.
+208 silly tarball no local data for @emnapi/wasi-threads@https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.0.tgz. Extracting by manifest.
+209 silly tarball no local data for @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-4.0.19.tgz. Extracting by manifest.
+210 silly tarball no local data for @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz. Extracting by manifest.
+211 silly tarball no local data for @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz. Extracting by manifest.
+212 silly tarball no local data for @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz. Extracting by manifest.
+213 silly tarball no local data for @ai-sdk/provider@https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz. Extracting by manifest.
+214 silly tarball no local data for @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz. Extracting by manifest.
+215 silly tarball no local data for @ai-sdk/provider-utils@https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz. Extracting by manifest.
+216 http fetch GET 200 https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 361ms (cache miss)
+217 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 402ms
+218 silly audit report {
+218 silly audit report   ai: [
+218 silly audit report     {
+218 silly audit report       id: 1111095,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-rwvc-j5jr-mgvh',
+218 silly audit report       title: "Vercel’s AI SDK's filetype whitelists can be bypassed when uploading files",
+218 silly audit report       severity: 'low',
+218 silly audit report       vulnerable_versions: '<5.0.52',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ],
+218 silly audit report   glob: [
+218 silly audit report     {
+218 silly audit report       id: 1109842,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-5j98-mcp5-4vw2',
+218 silly audit report       title: 'glob CLI: Command injection via -c/--cmd executes matches with shell:true',
+218 silly audit report       severity: 'high',
+218 silly audit report       vulnerable_versions: '>=10.2.0 <10.5.0',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ],
+218 silly audit report   jsondiffpatch: [
+218 silly audit report     {
+218 silly audit report       id: 1108189,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-33vc-wfww-vjfv',
+218 silly audit report       title: 'jsondiffpatch is vulnerable to Cross-site Scripting (XSS) via HtmlFormatter::nodeBegin',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '<0.7.2',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ],
+218 silly audit report   next: [
+218 silly audit report     {
+218 silly audit report       id: 1112593,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-9g9p-9gw9-jx7f',
+218 silly audit report       title: 'Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration',
+218 silly audit report       severity: 'moderate',
+218 silly audit report       vulnerable_versions: '>=10.0.0 <15.5.10',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     },
+218 silly audit report     {
+218 silly audit report       id: 1112653,
+218 silly audit report       url: 'https://github.com/advisories/GHSA-h25m-26qc-wcjf',
+218 silly audit report       title: 'Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components',
+218 silly audit report       severity: 'high',
+218 silly audit report       vulnerable_versions: '>=13.0.0 <15.0.8',
+218 silly audit report       cwe: [Array],
+218 silly audit report       cvss: [Object]
+218 silly audit report     }
+218 silly audit report   ]
+218 silly audit report }
+219 silly packumentCache corgi:https://registry.npmjs.org/ai cache-miss
+220 silly packumentCache corgi:https://registry.npmjs.org/glob cache-miss
+221 silly packumentCache corgi:https://registry.npmjs.org/jsondiffpatch cache-miss
+222 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+223 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 1821ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/anthropic/-/anthropic-3.0.58.tgz 2002ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 2002ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.9.0.tgz 2078ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/ai 1988ms (cache miss)
+228 silly packumentCache corgi:https://registry.npmjs.org/ai set size:undefined disposed:false
+229 http fetch GET 200 https://registry.npmjs.org/@emnapi/wasi-threads/-/wasi-threads-1.2.0.tgz 2561ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/glob 2229ms (cache miss)
+231 silly packumentCache corgi:https://registry.npmjs.org/glob set size:undefined disposed:false
+232 http fetch GET 200 https://registry.npmjs.org/eventsource-parser/-/eventsource-parser-3.0.6.tgz 2658ms (cache miss)
+233 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-4.0.19.tgz 2802ms (cache miss)
+234 http fetch GET 200 https://registry.npmjs.org/jsondiffpatch 2458ms (cache miss)
+235 silly packumentCache corgi:https://registry.npmjs.org/jsondiffpatch set size:undefined disposed:false
+236 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 3313ms (cache miss)
+237 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/openai/-/openai-3.0.41.tgz 3668ms (cache miss)
+238 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider/-/provider-3.0.8.tgz 4018ms (cache miss)
+239 http fetch GET 200 https://registry.npmjs.org/@tybys/wasm-util/-/wasm-util-0.10.1.tgz 4434ms (cache miss)
+240 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 5534ms (cache miss)
+241 http fetch GET 200 https://registry.npmjs.org/@ai-sdk/provider-utils/-/provider-utils-2.2.8.tgz 6133ms (cache miss)
+242 http fetch GET 200 https://registry.npmjs.org/@emnapi/core/-/core-1.9.0.tgz 6151ms (cache miss)
+243 http fetch GET 200 https://registry.npmjs.org/@napi-rs/wasm-runtime/-/wasm-runtime-0.2.12.tgz 7364ms (cache miss)
+244 http fetch GET 200 https://registry.npmjs.org/next 7358ms (cache miss)
+245 silly packumentCache corgi:https://registry.npmjs.org/next set size:undefined disposed:false
+246 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next cache-miss
+247 http fetch GET 200 https://registry.npmjs.org/@next%2feslint-plugin-next 1414ms (cache miss)
+248 silly packumentCache corgi:https://registry.npmjs.org/@next%2feslint-plugin-next set size:undefined disposed:false
+249 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next cache-miss
+250 http fetch GET 200 https://registry.npmjs.org/eslint-config-next 8046ms (cache miss)
+251 silly packumentCache corgi:https://registry.npmjs.org/eslint-config-next set size:undefined disposed:false
+252 silly ADD node_modules/eventsource-parser
+253 silly ADD node_modules/@ai-sdk/openai
+254 silly ADD node_modules/@ai-sdk/openai/node_modules/@ai-sdk/provider
+255 silly ADD node_modules/@ai-sdk/anthropic
+256 silly ADD node_modules/@ai-sdk/anthropic/node_modules/@ai-sdk/provider
+257 silly ADD node_modules/fsevents
+258 silly ADD
+259 silly ADD
+260 silly ADD
+261 silly ADD
+262 silly ADD
+263 silly ADD
+264 silly ADD
+265 silly ADD
+266 silly ADD
+267 silly ADD
+268 silly ADD
+269 silly ADD
+270 silly ADD
+271 silly ADD
+272 silly ADD
+273 silly ADD
+274 silly ADD
+275 silly ADD
+276 silly ADD
+277 silly ADD
+278 silly ADD
+279 silly ADD
+280 silly ADD
+281 silly ADD
+282 silly ADD
+283 silly ADD
+284 silly ADD
+285 silly ADD
+286 silly ADD
+287 silly ADD
+288 silly ADD
+289 silly ADD node_modules/ai/node_modules/@ai-sdk/provider-utils
+290 silly ADD node_modules/@ai-sdk/ui-utils/node_modules/@ai-sdk/provider-utils
+291 silly ADD node_modules/@ai-sdk/react/node_modules/@ai-sdk/provider-utils
+292 silly CHANGE node_modules/@ai-sdk/provider-utils
+293 silly ADD node_modules/@ai-sdk/provider-utils/node_modules/@ai-sdk/provider
+294 verbose cwd /Users/wanqin/resume-copilot
+295 verbose os Darwin 24.5.0
+296 verbose node v22.20.0
+297 verbose npm  v10.9.3
+298 verbose exit 0
+299 info ok

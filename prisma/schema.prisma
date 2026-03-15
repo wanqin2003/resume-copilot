@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model MasterProfile {
+  id        String   @id @default(cuid())
+  name      String   @default("")
+  email     String   @default("")
+  phone     String   @default("")
+  location  String   @default("")
+  summary   String   @default("")
+  skills    String   @default("[]") // JSON array of skill strings
+  education String   @default("[]") // JSON array of education objects
+  workExp   String   @default("[]") // JSON array of work experience objects
+  projects  String   @default("[]") // JSON array of project objects
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Application {
+  id            String   @id @default(cuid())
+  targetCompany String
+  targetRole    String
+  jdText        String
+  status        String   @default("PREPARING") // PREPARING | APPLIED | INTERVIEWING | CLOSED
+  tailoredData  String   @default("{}") // JSON: generated tailored resume content
+  interviewQA   String   @default("[]") // JSON: predicted interview Q&A
+  notes         String   @default("")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

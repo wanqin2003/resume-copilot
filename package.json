@@ -1,0 +1,41 @@
+{
+  "name": "resume-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.58",
+    "@ai-sdk/openai": "^3.0.41",
+    "@prisma/client": "^6",
+    "@radix-ui/react-slot": "^1.1",
+    "ai": "^6.0.116",
+    "class-variance-authority": "^0.7",
+    "clsx": "^2",
+    "lucide-react": "^0.460",
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "^14",
+    "postcss": "^8",
+    "prisma": "^6",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
